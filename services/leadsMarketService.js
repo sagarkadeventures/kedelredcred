@@ -70,7 +70,7 @@ export async function postToLeadsMarket(leadData, minimumPrice = 80) {
       TCPAConsentText: "By submitting this form, I agree to the Terms of Use and Privacy Policy and consent to be contacted by lenders."
     };
 
-    console.log('📤 Posting to LeadsMarket:', payload);
+    console.log('📤 Posting to LeadsMarket are:', payload);
 
     const response = await axios.post(LEADSMARKET_API_URL, payload, {
       headers: {
