@@ -562,12 +562,12 @@ function EnhancedLeadForm() {
       // } 
       else if (result.status === "rejected") {
         setSubmitStatus("rejected");
+        setRedirectUrl("https://radcred.com/");
 
-        // Auto-close popup after 8 seconds and return to form
+        // Redirect after 1 minute (60 seconds)
         setTimeout(() => {
-          setSubmitStatus(null);
-          setCurrentStep(1);
-        }, 8000);
+          redirectToUrl("https://radcred.com/");
+        }, 60000);
       }
      
       
