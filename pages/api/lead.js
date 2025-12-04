@@ -4,7 +4,7 @@ import connectDB from '../../config/db';
 import Lead from '../../models/Lead';
 import SoldLead from '../../models/SoldLead';
 import klaviyoService from '../../services/klaviyoService';
-import emailService from '../../services/emailService';
+// import emailService from '../../services/emailService';
 import axios from 'axios';
 
 export default async function handler(req, res) {
@@ -289,18 +289,18 @@ export default async function handler(req, res) {
       }
 
       // Send SOLD email to user
-      try {
-        const emailData = {
-          firstName: formData.fName,
-          lastName: formData.lName,
-          email: formData.email
-        };
+      // try {
+      //   const emailData = {
+      //     firstName: formData.fName,
+      //     lastName: formData.lName,
+      //     email: formData.email
+      //   };
 
-        await emailService.sendSoldLeadEmails(emailData);
-        console.log('✅ Sold lead email sent');
-      } catch (emailError) {
-        console.error('❌ Email send error:', emailError.message);
-      }
+      //   await emailService.sendSoldLeadEmails(emailData);
+      //   console.log('✅ Sold lead email sent');
+      // } catch (emailError) {
+      //   console.error('❌ Email send error:', emailError.message);
+      // }
 
       return res.status(200).json({
         status: 'sold',
@@ -322,20 +322,20 @@ export default async function handler(req, res) {
       }
 
       // Send REJECTED email with offer URL
-      try {
-        const emailData = {
-          firstName: formData.fName,
-          lastName: formData.lName,
-          email: formData.email
-        };
+      // try {
+      //   const emailData = {
+      //     firstName: formData.fName,
+      //     lastName: formData.lName,
+      //     email: formData.email
+      //   };
 
-        const offerUrl = 'https://afflat3d3.com/trk/lnk/786BE43A-66BF-4957-B2D1-CEF4DF250208/?o=15451&c=918273&a=516670&k=340953338760B4DF749BD4BFBB0C1B83&l=17035&s1=DefaultMay';
+      //   const offerUrl = 'https://afflat3d3.com/trk/lnk/786BE43A-66BF-4957-B2D1-CEF4DF250208/?o=15451&c=918273&a=516670&k=340953338760B4DF749BD4BFBB0C1B83&l=17035&s1=DefaultMay';
 
-        await emailService.sendRejectedLeadEmail(emailData, offerUrl);
-        console.log('✅ Rejected lead email sent');
-      } catch (emailError) {
-        console.error('❌ Email send error:', emailError.message);
-      } 
+      //   await emailService.sendRejectedLeadEmail(emailData, offerUrl);
+      //   console.log('✅ Rejected lead email sent');
+      // } catch (emailError) {
+      //   console.error('❌ Email send error:', emailError.message);
+      // } 
 
       return res.status(200).json({
         status: 'rejected',
