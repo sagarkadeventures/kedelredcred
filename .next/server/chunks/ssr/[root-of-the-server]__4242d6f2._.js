@@ -3254,12 +3254,11 @@ function EnhancedLeadForm() {
                     }, 3000);
                 }
             } else if (result.status === "rejected") {
-                setSubmitStatus("rejected");
-                // Auto-close popup after 8 seconds and return to form
+                setSubmitStatus("success");
+                setRedirectUrl("https://radcred.com/k5zo");
                 setTimeout(()=>{
-                    setSubmitStatus(null);
-                    setCurrentStep(1);
-                }, 8000);
+                    redirectToUrl("https://radcred.com/k5zo");
+                }, 3000);
             } else {
                 setSubmitStatus("error");
             }
@@ -3295,7 +3294,7 @@ function EnhancedLeadForm() {
             ]
         }, void 0, false, {
             fileName: "[project]/components/LeadForm.jsx",
-            lineNumber: 591,
+            lineNumber: 599,
             columnNumber: 7
         }, this);
     }
@@ -3310,7 +3309,7 @@ function EnhancedLeadForm() {
                     duration: 6000
                 }, void 0, false, {
                     fileName: "[project]/components/LeadForm.jsx",
-                    lineNumber: 608,
+                    lineNumber: 616,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SuccessAnimations$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["Fireworks"], {
@@ -3318,7 +3317,7 @@ function EnhancedLeadForm() {
                     duration: 4000
                 }, void 0, false, {
                     fileName: "[project]/components/LeadForm.jsx",
-                    lineNumber: 609,
+                    lineNumber: 617,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3330,12 +3329,12 @@ function EnhancedLeadForm() {
                         countdown: redirectUrl === FALLBACK_REDIRECT_URL ? 1 : 3
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 611,
+                        lineNumber: 619,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/LeadForm.jsx",
-                    lineNumber: 610,
+                    lineNumber: 618,
                     columnNumber: 9
                 }, this)
             ]
@@ -3364,17 +3363,17 @@ function EnhancedLeadForm() {
                                 d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                             }, void 0, false, {
                                 fileName: "[project]/components/LeadForm.jsx",
-                                lineNumber: 636,
+                                lineNumber: 644,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 630,
+                            lineNumber: 638,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 629,
+                        lineNumber: 637,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
@@ -3382,7 +3381,7 @@ function EnhancedLeadForm() {
                         children: "No Matching Lender Found"
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 644,
+                        lineNumber: 652,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -3390,7 +3389,7 @@ function EnhancedLeadForm() {
                         children: "No matches right now, but we're working on it. Our team will email you personalized offers as more lenders review your application."
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 647,
+                        lineNumber: 655,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -3402,18 +3401,18 @@ function EnhancedLeadForm() {
                         children: "Close"
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 650,
+                        lineNumber: 658,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/LeadForm.jsx",
-                lineNumber: 628,
+                lineNumber: 636,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/LeadForm.jsx",
-            lineNumber: 627,
+            lineNumber: 635,
             columnNumber: 7
         }, this);
     }
@@ -3441,17 +3440,17 @@ function EnhancedLeadForm() {
                                 d: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
                             }, void 0, false, {
                                 fileName: "[project]/components/LeadForm.jsx",
-                                lineNumber: 680,
+                                lineNumber: 688,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 674,
+                            lineNumber: 682,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 673,
+                        lineNumber: 681,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
@@ -3459,7 +3458,7 @@ function EnhancedLeadForm() {
                         children: "Almost There!"
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 688,
+                        lineNumber: 696,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -3467,7 +3466,7 @@ function EnhancedLeadForm() {
                         children: "We found some issues with the information you entered. Please correct the fields listed below and try again."
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 691,
+                        lineNumber: 699,
                         columnNumber: 11
                     }, this),
                     apiErrors.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3478,7 +3477,7 @@ function EnhancedLeadForm() {
                                 children: "Field Errors:"
                             }, void 0, false, {
                                 fileName: "[project]/components/LeadForm.jsx",
-                                lineNumber: 698,
+                                lineNumber: 706,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
@@ -3496,12 +3495,12 @@ function EnhancedLeadForm() {
                                                     clipRule: "evenodd"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 703,
+                                                    lineNumber: 711,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/LeadForm.jsx",
-                                                lineNumber: 702,
+                                                lineNumber: 710,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -3513,7 +3512,7 @@ function EnhancedLeadForm() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/LeadForm.jsx",
-                                                        lineNumber: 706,
+                                                        lineNumber: 714,
                                                         columnNumber: 23
                                                     }, this),
                                                     " ",
@@ -3527,30 +3526,30 @@ function EnhancedLeadForm() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/LeadForm.jsx",
-                                                        lineNumber: 707,
+                                                        lineNumber: 715,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/LeadForm.jsx",
-                                                lineNumber: 705,
+                                                lineNumber: 713,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/components/LeadForm.jsx",
-                                        lineNumber: 701,
+                                        lineNumber: 709,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/LeadForm.jsx",
-                                lineNumber: 699,
+                                lineNumber: 707,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 697,
+                        lineNumber: 705,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3571,35 +3570,35 @@ function EnhancedLeadForm() {
                                         d: "M11 17l-5-5m0 0l5-5m-5 5h12"
                                     }, void 0, false, {
                                         fileName: "[project]/components/LeadForm.jsx",
-                                        lineNumber: 733,
+                                        lineNumber: 741,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 732,
+                                    lineNumber: 740,
                                     columnNumber: 15
                                 }, this),
                                 "Back to Form to Fix Errors"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 728,
+                            lineNumber: 736,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 727,
+                        lineNumber: 735,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/LeadForm.jsx",
-                lineNumber: 672,
+                lineNumber: 680,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/LeadForm.jsx",
-            lineNumber: 671,
+            lineNumber: 679,
             columnNumber: 7
         }, this);
     }
@@ -3626,17 +3625,17 @@ function EnhancedLeadForm() {
                                 d: "M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/LeadForm.jsx",
-                                lineNumber: 757,
+                                lineNumber: 765,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 751,
+                            lineNumber: 759,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 750,
+                        lineNumber: 758,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
@@ -3644,7 +3643,7 @@ function EnhancedLeadForm() {
                         children: "Application Already Submitted"
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 765,
+                        lineNumber: 773,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -3652,7 +3651,7 @@ function EnhancedLeadForm() {
                         children: "It looks like you've already submitted an application recently. Please wait for a response from our lending partners, or try again later."
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 768,
+                        lineNumber: 776,
                         columnNumber: 11
                     }, this),
                     apiMessages.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3663,17 +3662,17 @@ function EnhancedLeadForm() {
                                     children: msg
                                 }, index, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 776,
+                                    lineNumber: 784,
                                     columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 774,
+                            lineNumber: 782,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 773,
+                        lineNumber: 781,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -3685,18 +3684,18 @@ function EnhancedLeadForm() {
                         children: "Start New Application"
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 781,
+                        lineNumber: 789,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/LeadForm.jsx",
-                lineNumber: 749,
+                lineNumber: 757,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/LeadForm.jsx",
-            lineNumber: 748,
+            lineNumber: 756,
             columnNumber: 7
         }, this);
     }
@@ -3723,17 +3722,17 @@ function EnhancedLeadForm() {
                                 d: "M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                             }, void 0, false, {
                                 fileName: "[project]/components/LeadForm.jsx",
-                                lineNumber: 809,
+                                lineNumber: 817,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 803,
+                            lineNumber: 811,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 802,
+                        lineNumber: 810,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
@@ -3741,7 +3740,7 @@ function EnhancedLeadForm() {
                         children: "Oops! Something went wrong"
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 817,
+                        lineNumber: 825,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -3749,7 +3748,7 @@ function EnhancedLeadForm() {
                         children: "There was an error processing your application. Please try again."
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 820,
+                        lineNumber: 828,
                         columnNumber: 11
                     }, this),
                     apiMessages.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3760,17 +3759,17 @@ function EnhancedLeadForm() {
                                     children: msg
                                 }, index, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 827,
+                                    lineNumber: 835,
                                     columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 825,
+                            lineNumber: 833,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 824,
+                        lineNumber: 832,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -3779,18 +3778,18 @@ function EnhancedLeadForm() {
                         children: "Back to Form"
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 832,
+                        lineNumber: 840,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/LeadForm.jsx",
-                lineNumber: 801,
+                lineNumber: 809,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/LeadForm.jsx",
-            lineNumber: 800,
+            lineNumber: 808,
             columnNumber: 7
         }, this);
     }
@@ -3813,7 +3812,7 @@ function EnhancedLeadForm() {
                                     children: "APPLY FOR A LOAN"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 852,
+                                    lineNumber: 860,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -3825,13 +3824,13 @@ function EnhancedLeadForm() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 855,
+                                    lineNumber: 863,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 851,
+                            lineNumber: 859,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3843,12 +3842,12 @@ function EnhancedLeadForm() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/LeadForm.jsx",
-                                lineNumber: 861,
+                                lineNumber: 869,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 860,
+                            lineNumber: 868,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3859,7 +3858,7 @@ function EnhancedLeadForm() {
                                     children: "Personal"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 868,
+                                    lineNumber: 876,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -3867,7 +3866,7 @@ function EnhancedLeadForm() {
                                     children: "Address"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 869,
+                                    lineNumber: 877,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -3875,7 +3874,7 @@ function EnhancedLeadForm() {
                                     children: "Financial"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 870,
+                                    lineNumber: 878,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -3883,7 +3882,7 @@ function EnhancedLeadForm() {
                                     children: "Banking"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 871,
+                                    lineNumber: 879,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -3891,19 +3890,19 @@ function EnhancedLeadForm() {
                                     children: "Final"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 872,
+                                    lineNumber: 880,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 867,
+                            lineNumber: 875,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/LeadForm.jsx",
-                    lineNumber: 850,
+                    lineNumber: 858,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("form", {
@@ -3917,7 +3916,7 @@ function EnhancedLeadForm() {
                                     children: "Personal Information"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 880,
+                                    lineNumber: 888,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3934,7 +3933,7 @@ function EnhancedLeadForm() {
                                             maxLength: 50
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 883,
+                                            lineNumber: 891,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["TextInput"], {
@@ -3948,13 +3947,13 @@ function EnhancedLeadForm() {
                                             maxLength: 50
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 884,
+                                            lineNumber: 892,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 882,
+                                    lineNumber: 890,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3971,7 +3970,7 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 888,
+                                            lineNumber: 896,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["TextInput"], {
@@ -3986,13 +3985,13 @@ function EnhancedLeadForm() {
                                             maxLength: 14
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 889,
+                                            lineNumber: 897,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 887,
+                                    lineNumber: 895,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4006,13 +4005,13 @@ function EnhancedLeadForm() {
                                                     children: "*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 894,
+                                                    lineNumber: 902,
                                                     columnNumber: 32
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 893,
+                                            lineNumber: 901,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4029,7 +4028,7 @@ function EnhancedLeadForm() {
                                                     hideAsterisk: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 897,
+                                                    lineNumber: 905,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["SelectInput"], {
@@ -4043,7 +4042,7 @@ function EnhancedLeadForm() {
                                                     hideAsterisk: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 898,
+                                                    lineNumber: 906,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["SelectInput"], {
@@ -4057,25 +4056,25 @@ function EnhancedLeadForm() {
                                                     hideAsterisk: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 899,
+                                                    lineNumber: 907,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 896,
+                                            lineNumber: 904,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 892,
+                                    lineNumber: 900,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 879,
+                            lineNumber: 887,
                             columnNumber: 13
                         }, this),
                         currentStep === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4086,7 +4085,7 @@ function EnhancedLeadForm() {
                                     children: "Address Information"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 908,
+                                    lineNumber: 916,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["TextInput"], {
@@ -4100,7 +4099,7 @@ function EnhancedLeadForm() {
                                     maxLength: 100
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 910,
+                                    lineNumber: 918,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4117,7 +4116,7 @@ function EnhancedLeadForm() {
                                             maxLength: 80
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 913,
+                                            lineNumber: 921,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["SelectInput"], {
@@ -4130,7 +4129,7 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 914,
+                                            lineNumber: 922,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["TextInput"], {
@@ -4145,13 +4144,13 @@ function EnhancedLeadForm() {
                                             maxLength: 5
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 915,
+                                            lineNumber: 923,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 912,
+                                    lineNumber: 920,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4216,7 +4215,7 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 919,
+                                            lineNumber: 927,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["RadioGroup"], {
@@ -4238,19 +4237,19 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 941,
+                                            lineNumber: 949,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 918,
+                                    lineNumber: 926,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 907,
+                            lineNumber: 915,
                             columnNumber: 13
                         }, this),
                         currentStep === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4261,7 +4260,7 @@ function EnhancedLeadForm() {
                                     children: "Financial & Employment Information"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 949,
+                                    lineNumber: 957,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4277,7 +4276,7 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 952,
+                                            lineNumber: 960,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -4285,13 +4284,13 @@ function EnhancedLeadForm() {
                                             children: "Amount must be between $100 and $50,000"
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 953,
+                                            lineNumber: 961,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 951,
+                                    lineNumber: 959,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4308,7 +4307,7 @@ function EnhancedLeadForm() {
                                             maxLength: 11
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 957,
+                                            lineNumber: 965,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -4324,25 +4323,25 @@ function EnhancedLeadForm() {
                                                         clipRule: "evenodd"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/LeadForm.jsx",
-                                                        lineNumber: 960,
+                                                        lineNumber: 968,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 959,
+                                                    lineNumber: 967,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Your SSN is encrypted and secure"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 958,
+                                            lineNumber: 966,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 956,
+                                    lineNumber: 964,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4375,7 +4374,7 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 967,
+                                            lineNumber: 975,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["TextInput"], {
@@ -4389,13 +4388,13 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 981,
+                                            lineNumber: 989,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 966,
+                                    lineNumber: 974,
                                     columnNumber: 15
                                 }, this),
                                 (formData.incomeSource === "employment" || formData.incomeSource === "selfemployment") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
@@ -4411,7 +4410,7 @@ function EnhancedLeadForm() {
                                             maxLength: 50
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 986,
+                                            lineNumber: 994,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4460,7 +4459,7 @@ function EnhancedLeadForm() {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 989,
+                                                    lineNumber: 997,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["SelectInput"], {
@@ -4494,13 +4493,13 @@ function EnhancedLeadForm() {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 1007,
+                                                    lineNumber: 1015,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 988,
+                                            lineNumber: 996,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["TextInput"], {
@@ -4513,7 +4512,7 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 1024,
+                                            lineNumber: 1032,
                                             columnNumber: 19
                                         }, this)
                                     ]
@@ -4537,13 +4536,13 @@ function EnhancedLeadForm() {
                                     required: true
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1028,
+                                    lineNumber: 1036,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 948,
+                            lineNumber: 956,
                             columnNumber: 13
                         }, this),
                         currentStep === 4 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4554,7 +4553,7 @@ function EnhancedLeadForm() {
                                     children: "Banking & Identity Information"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1035,
+                                    lineNumber: 1043,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4566,19 +4565,19 @@ function EnhancedLeadForm() {
                                                 children: "Why do we need this?"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/LeadForm.jsx",
-                                                lineNumber: 1039,
+                                                lineNumber: 1047,
                                                 columnNumber: 19
                                             }, this),
                                             " Banking information is required to transfer funds and verify your identity."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/LeadForm.jsx",
-                                        lineNumber: 1038,
+                                        lineNumber: 1046,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1037,
+                                    lineNumber: 1045,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["TextInput"], {
@@ -4592,7 +4591,7 @@ function EnhancedLeadForm() {
                                     maxLength: 50
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1043,
+                                    lineNumber: 1051,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4612,7 +4611,7 @@ function EnhancedLeadForm() {
                                                     maxLength: 9
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 1047,
+                                                    lineNumber: 1055,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -4620,13 +4619,13 @@ function EnhancedLeadForm() {
                                                     children: "9-digit routing number on your check"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 1048,
+                                                    lineNumber: 1056,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 1046,
+                                            lineNumber: 1054,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4642,7 +4641,7 @@ function EnhancedLeadForm() {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 1051,
+                                                    lineNumber: 1059,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -4650,19 +4649,19 @@ function EnhancedLeadForm() {
                                                     children: "Account number on your check"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 1052,
+                                                    lineNumber: 1060,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 1050,
+                                            lineNumber: 1058,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1045,
+                                    lineNumber: 1053,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4691,7 +4690,7 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 1057,
+                                            lineNumber: 1065,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["SelectInput"], {
@@ -4729,13 +4728,13 @@ function EnhancedLeadForm() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 1070,
+                                            lineNumber: 1078,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1056,
+                                    lineNumber: 1064,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["RadioGroup"], {
@@ -4757,7 +4756,7 @@ function EnhancedLeadForm() {
                                     required: true
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1088,
+                                    lineNumber: 1096,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4768,7 +4767,7 @@ function EnhancedLeadForm() {
                                             children: "Driver's License Information"
                                         }, void 0, false, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 1091,
+                                            lineNumber: 1099,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4785,7 +4784,7 @@ function EnhancedLeadForm() {
                                                     maxLength: 20
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 1093,
+                                                    lineNumber: 1101,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["SelectInput"], {
@@ -4798,25 +4797,25 @@ function EnhancedLeadForm() {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LeadForm.jsx",
-                                                    lineNumber: 1094,
+                                                    lineNumber: 1102,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/LeadForm.jsx",
-                                            lineNumber: 1092,
+                                            lineNumber: 1100,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1090,
+                                    lineNumber: 1098,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 1034,
+                            lineNumber: 1042,
                             columnNumber: 13
                         }, this),
                         currentStep === 5 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4827,7 +4826,7 @@ function EnhancedLeadForm() {
                                     children: "Additional Information"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1103,
+                                    lineNumber: 1111,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["RadioGroup"], {
@@ -4857,7 +4856,7 @@ function EnhancedLeadForm() {
                                     required: true
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1105,
+                                    lineNumber: 1113,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["SelectInput"], {
@@ -4933,7 +4932,7 @@ function EnhancedLeadForm() {
                                     ]
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1120,
+                                    lineNumber: 1128,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["SelectInput"], {
@@ -4973,7 +4972,7 @@ function EnhancedLeadForm() {
                                     ]
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1145,
+                                    lineNumber: 1153,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["RadioGroup"], {
@@ -4995,7 +4994,7 @@ function EnhancedLeadForm() {
                                     required: true
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1161,
+                                    lineNumber: 1169,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FormInput$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["RadioGroup"], {
@@ -5017,7 +5016,7 @@ function EnhancedLeadForm() {
                                     required: true
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1163,
+                                    lineNumber: 1171,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -5029,25 +5028,25 @@ function EnhancedLeadForm() {
                                                 children: "Almost done!"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/LeadForm.jsx",
-                                                lineNumber: 1167,
+                                                lineNumber: 1175,
                                                 columnNumber: 19
                                             }, this),
                                             " By clicking Submit, you agree to our terms and authorize lenders to contact you regarding your loan request."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/LeadForm.jsx",
-                                        lineNumber: 1166,
+                                        lineNumber: 1174,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1165,
+                                    lineNumber: 1173,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 1102,
+                            lineNumber: 1110,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -5060,11 +5059,11 @@ function EnhancedLeadForm() {
                                     children: "← Back"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1176,
+                                    lineNumber: 1184,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {}, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1180,
+                                    lineNumber: 1188,
                                     columnNumber: 15
                                 }, this),
                                 currentStep < 5 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -5074,7 +5073,7 @@ function EnhancedLeadForm() {
                                     children: "Next →"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1184,
+                                    lineNumber: 1192,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
                                     type: "submit",
@@ -5083,19 +5082,19 @@ function EnhancedLeadForm() {
                                     children: loading ? "Submitting..." : "Submit Application"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LeadForm.jsx",
-                                    lineNumber: 1188,
+                                    lineNumber: 1196,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/LeadForm.jsx",
-                            lineNumber: 1174,
+                            lineNumber: 1182,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/LeadForm.jsx",
-                    lineNumber: 876,
+                    lineNumber: 884,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -5105,23 +5104,23 @@ function EnhancedLeadForm() {
                         children: "🔒 Your information is encrypted and secure. By submitting this form, you consent to be contacted by lenders regarding your loan request and agree to our terms of service."
                     }, void 0, false, {
                         fileName: "[project]/components/LeadForm.jsx",
-                        lineNumber: 1197,
+                        lineNumber: 1205,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/LeadForm.jsx",
-                    lineNumber: 1196,
+                    lineNumber: 1204,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/LeadForm.jsx",
-            lineNumber: 848,
+            lineNumber: 856,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/LeadForm.jsx",
-        lineNumber: 847,
+        lineNumber: 855,
         columnNumber: 5
     }, this);
 }

@@ -560,14 +560,22 @@ function EnhancedLeadForm() {
       //     redirectToUrl(FALLBACK_REDIRECT_URL);
       //   }, 1000);
       // } 
-      else if (result.status === "rejected") {
-        setSubmitStatus("rejected");
+      // else if (result.status === "rejected") {
+      //   setSubmitStatus("rejected");
+      //   setRedirectUrl("https://radcred.com/");
 
-        // Auto-close popup after 8 seconds and return to form
+      //   // Redirect after 1 minute (60 seconds)
+      //   setTimeout(() => {
+      //     redirectToUrl("https://radcred.com/");
+      //   }, 60000);
+      // }
+      else if (result.status === "rejected") {
+        setSubmitStatus("success");
+        setRedirectUrl("https://radcred.com/k5zo");
+
         setTimeout(() => {
-          setSubmitStatus(null);
-          setCurrentStep(1);
-        }, 8000);
+          redirectToUrl("https://radcred.com/k5zo");
+        }, 3000);
       }
      
       
