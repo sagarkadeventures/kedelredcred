@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const LEADSMARKET_API_URL = 'https://api.leadsmarket.com/post/data.aspx';
-const CAMPAIGN_ID = '331246';
-const CAMPAIGN_KEY = 'b52b889f-0112-4fd0-a679-1bbc6fd5b361';
+const LEADSMARKET_API_URL = process.env.LEADSMARKET_API_URL || 'https://api.leadsmarket.com/post/data.aspx';
+const CAMPAIGN_ID = process.env.CAMPAIGN_ID || '332180';
+const CAMPAIGN_KEY = process.env.CAMPAIGN_KEY || 'aa58e69c-7bb0-4d24-9d1e-57d78424b5c3';
 
 export async function postToLeadsMarket(leadData, minimumPrice = 80) {
   try {
